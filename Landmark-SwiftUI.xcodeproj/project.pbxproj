@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5114B77B25A36ED300BA0BAB /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114B77A25A36ED300BA0BAB /* Landmark.swift */; };
+		5114B78025A36FDF00BA0BAB /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114B77F25A36FDF00BA0BAB /* Coordinates.swift */; };
+		5114B78825A370B800BA0BAB /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5114B78725A370B800BA0BAB /* landmarkData.json */; };
+		5114B78D25A370F400BA0BAB /* LandmarkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114B78C25A370F400BA0BAB /* LandmarkModelTests.swift */; };
+		5114B79625A371B100BA0BAB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114B79525A371B100BA0BAB /* DataProvider.swift */; };
 		512DFF5325A36C48002A643F /* Landmark_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DFF5225A36C48002A643F /* Landmark_SwiftUIApp.swift */; };
 		512DFF5525A36C48002A643F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DFF5425A36C48002A643F /* ContentView.swift */; };
 		512DFF5725A36C4A002A643F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512DFF5625A36C4A002A643F /* Assets.xcassets */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5114B77A25A36ED300BA0BAB /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		5114B77F25A36FDF00BA0BAB /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		5114B78725A370B800BA0BAB /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = "Landmark-SwiftUI/landmarkData.json"; sourceTree = SOURCE_ROOT; };
+		5114B78C25A370F400BA0BAB /* LandmarkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkModelTests.swift; sourceTree = "<group>"; };
+		5114B79525A371B100BA0BAB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		512DFF4F25A36C48002A643F /* Landmark-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Landmark-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		512DFF5225A36C48002A643F /* Landmark_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark_SwiftUIApp.swift; sourceTree = "<group>"; };
 		512DFF5425A36C48002A643F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5114B78425A3700100BA0BAB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5114B77A25A36ED300BA0BAB /* Landmark.swift */,
+				5114B77F25A36FDF00BA0BAB /* Coordinates.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5114B78525A3700B00BA0BAB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				512DFF5425A36C48002A643F /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5114B78625A370AE00BA0BAB /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				512DFF5625A36C4A002A643F /* Assets.xcassets */,
+				512DFF5B25A36C4A002A643F /* Info.plist */,
+				5114B78725A370B800BA0BAB /* landmarkData.json */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		5114B79425A371A300BA0BAB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5114B79525A371B100BA0BAB /* DataProvider.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5114B79A25A371BB00BA0BAB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5114B78425A3700100BA0BAB /* Models */,
+				5114B79425A371A300BA0BAB /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		512DFF4625A36C48002A643F = {
 			isa = PBXGroup;
 			children = (
@@ -96,9 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				512DFF5225A36C48002A643F /* Landmark_SwiftUIApp.swift */,
-				512DFF5425A36C48002A643F /* ContentView.swift */,
-				512DFF5625A36C4A002A643F /* Assets.xcassets */,
-				512DFF5B25A36C4A002A643F /* Info.plist */,
+				5114B78525A3700B00BA0BAB /* Scenes */,
+				5114B79A25A371BB00BA0BAB /* Common */,
+				5114B78625A370AE00BA0BAB /* Resourses */,
 				512DFF5825A36C4A002A643F /* Preview Content */,
 			);
 			path = "Landmark-SwiftUI";
@@ -117,6 +171,7 @@
 			children = (
 				512DFF6425A36C4A002A643F /* Landmark_SwiftUITests.swift */,
 				512DFF6625A36C4A002A643F /* Info.plist */,
+				5114B78C25A370F400BA0BAB /* LandmarkModelTests.swift */,
 			);
 			path = "Landmark-SwiftUITests";
 			sourceTree = "<group>";
@@ -235,6 +290,7 @@
 			files = (
 				512DFF5A25A36C4A002A643F /* Preview Assets.xcassets in Resources */,
 				512DFF5725A36C4A002A643F /* Assets.xcassets in Resources */,
+				5114B78825A370B800BA0BAB /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +317,9 @@
 			files = (
 				512DFF5525A36C48002A643F /* ContentView.swift in Sources */,
 				512DFF5325A36C48002A643F /* Landmark_SwiftUIApp.swift in Sources */,
+				5114B79625A371B100BA0BAB /* DataProvider.swift in Sources */,
+				5114B77B25A36ED300BA0BAB /* Landmark.swift in Sources */,
+				5114B78025A36FDF00BA0BAB /* Coordinates.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				512DFF6525A36C4A002A643F /* Landmark_SwiftUITests.swift in Sources */,
+				5114B78D25A370F400BA0BAB /* LandmarkModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +481,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Landmark-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 4DJ2Q6S28R;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Landmark-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Landmark-SwiftUI/Resourses/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -443,7 +503,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Landmark-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 4DJ2Q6S28R;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Landmark-SwiftUI/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Landmark-SwiftUI/Resourses/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
